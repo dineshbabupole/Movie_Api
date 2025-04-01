@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Movie Collection</h1>
+
+    <!-- Add Movie Form -->
+    <form id="movieForm">
+        <input type="text" id="title" placeholder="Movie Title" required>
+        <input type="file" id="poster" required>
+        <button type="submit">Add Movie</button>
+    </form>
+
+    <!-- Movie List -->
+    <div id="movieList" class="grid"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
