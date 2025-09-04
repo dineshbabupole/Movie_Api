@@ -1,10 +1,8 @@
 services:
   - type: web
-    name: notebook-app
+    name: springboot-h2-app
     env: docker
+    rootDir: Notebook   # 👈 your project folder
     plan: free
-    buildCommand: ./mvnw clean package -DskipTests
-    startCommand: java -jar target/*.jar
-    envVars:
-      - key: JAVA_VERSION
-        value: 17
+    branch: main
+    healthCheckPath: /
